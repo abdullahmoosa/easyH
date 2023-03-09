@@ -52,5 +52,4 @@ img = cv2.imread('image.jpg')
 
 
 if __name__ == "__main__":
-    app.run()
     serve(app,host='127.0.0.1', port=5000)
