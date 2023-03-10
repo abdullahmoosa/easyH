@@ -5,8 +5,6 @@ import cv2
 import tensorflow, keras
 import numpy as np
 import pandas as pd
-from waitress import serve
-
 
 app = Flask(__name__)
 
@@ -52,4 +50,6 @@ img = cv2.imread('image.jpg')
 
 
 if __name__ == "__main__":
-    serve(app,host='127.0.0.1', port=5000)
+    # app.run(host='0.0.0.0',port=5000, url_scheme='https')
+    
+    app.run()
